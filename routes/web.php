@@ -17,7 +17,7 @@ use App\Http\Controllers\ProprietaireController;
 Route::get('proprietaires',[ProprietaireController::class,'index']);
 Route::get('proprietes',[ProprieteController::class,'index']);
 Route::get('proprietaires/{id}',[ProprietaireController::class,'show']);
-Route::put('proprietaires/{id}',[ProprietaireController::class,'update']);
+// Route::put('proprietaires/{id}',[ProprietaireController::class,'update']);
 Route::delete('proprietaires/delete/{id}',[ProprietaireController::class,'delete']);
 Route::post('proprietaires',[ProprietaireController::class,'store']);
 // Route::get('/proprietes/create', [ProprieteController::class,'create']);
