@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Proprietaire extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
+    protected $guarded = ['id'];
 
      
     public function proprietaires()
@@ -20,7 +20,3 @@ class Proprietaire extends Model
 
     }
 }
-=======
-    protected $guarded = ['id'];
-}
->>>>>>> d01f7457f846d35005168769f7f159989e171da0

@@ -90,7 +90,7 @@
                     <a class ="nav-link text-light pt-5" href="/proprietes"><i class="bi bi-house-fill"></i> Proprietes </a>
                 </li>
                 <li class ="nav-item" style="margin-top: 350px;">
-                    <a class ="nav-link pt-5 text-danger" href="/proprietes"><i class="bi bi-box-arrow-right"></i> Deconnexion </a>
+                    <a class ="nav-link pt-5 text-danger" href="/logout"><i class="bi bi-box-arrow-right"></i> Deconnexion </a>
                 </li>   
             </ul>
         </nav>
