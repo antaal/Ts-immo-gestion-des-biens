@@ -122,7 +122,7 @@
           <br>
           <div class="get-in-touch">
               <h1 class="title">Ajouter proprietaire</h1>
-              <form class="contact-form row" action="proprietairesStore" method="post">
+              <form class="contact-form row" action="/proprietairesStore" method="post">
               @csrf
                   <select class="form-field col-lg-6 input-text " name="civilite" required>
                       <option value="1">Mr</option>
