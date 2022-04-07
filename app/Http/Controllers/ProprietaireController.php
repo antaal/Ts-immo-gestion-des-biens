@@ -7,15 +7,43 @@ use Illuminate\Http\Request;
 
 class ProprietaireController extends Controller
 {
-    public function index(){
-        $Proprietaires = Proprietaire::all();
-        return view('proprietaire/index', ['Proprietaires' => $Proprietaires]);
+    // public function index(){
+    //     $Proprietaires = Proprietaire::all();
+    //     return view('proprietaire/index', ['Proprietaires' => $Proprietaires]);
+    // }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+{
+    $Proprietaires = Proprietaire::all();
+    return view('proprietaire.index', compact('Proprietaires'));
+}
+
+  /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+{
+    return view('proprietaire.addProprietaire');
+}
+
+
+    // public function show($id){
+    //     $Proprietaire = Proprietaire::findOrFail($id);
+    //     return new JsonResponse($Proprietaire,200);
+    // }
+
+    public function show(Proprietaire $Proprietaires)
+    {
+        return view('proprietaire.show', ['Proprietaires' => $Proprietaires]);
     }
 
-    public function show($id){
-        $Proprietaire = Proprietaire::findOrFail($id);
-        return new JsonResponse($Proprietaire,200);
-    }
 
     public function store(Request $request){
         $new_Proprietaire = Proprietaire::create([
